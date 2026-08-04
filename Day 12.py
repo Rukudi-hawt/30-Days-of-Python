@@ -151,5 +151,36 @@ def generate_colors(type, length):
 
      #return colour_list
 
-print(generate_colors('rgb', 3))
-     
+#print(generate_colors('rgb', 3))
+
+def shuffle_list(lst):
+     temp = ''
+     swap_index1 = 0
+     swap_index2 = 0
+     for i in range(0, len(lst)):
+          swap_index1 = random.randint(0, len(lst) - 1)
+          swap_index2 = random.randint(0, len(lst) - 1)
+
+          temp = lst[swap_index1]
+          lst[swap_index1] = lst[swap_index2] 
+          lst[swap_index2] = temp
+
+     return lst
+
+# fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape']
+# print(shuffle_list(fruits))
+
+def array_of_num():
+     numbers = []
+     num = 0
+
+     for i in range(0, 7, 1):
+          num = random.randint(0, 9)
+
+          if num not in numbers:
+               numbers.append(num)
+          else:
+               i -= 1
+     return numbers
+print(array_of_num())
+              
