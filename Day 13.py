@@ -14,13 +14,13 @@ flattened_list = [sub_list[x] for sub_list in list_of_lists for x in range(0, le
 # print(flattened_list)
 
 num_powers = []
-powers = [num_powers for num in range(0, 11, 1) for power in range(0, 7, 1)]
+powers = [num_powers for num in range(0, 11, 1) for power in range(0, 7, 1) ]
 
 
-# for num in range(0, 11, 1):
-#      num_powers = []
-#      num_powers.append(num)
-#      for power in range(0, 7, 1):
-#           num_powers.append(num**power)
-#      powers.append(num_powers)
+for num in range(0, 11, 1):
+     num_powers = []
+     num_powers.append(num)
+     for power in range(0, 7, 1):
+          num_powers.append(num**power)
+     powers.append(num_powers)
 print(powers)
