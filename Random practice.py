@@ -39,5 +39,21 @@ def find_duplicates(numbers):
 
      return trimmed_list
 
-numbers = [1, 3, 4, 3, 5, 1, 6, 4, 4]
-print(find_duplicates(numbers))
+# numbers = [1, 3, 4, 3, 5, 1, 6, 4, 4]
+# print(find_duplicates(numbers))
+
+
+def greet_edit(function):
+
+     def wrapper():
+          func = function()
+          Line = 'Blah\n' + str(func) + '\n' + 'Blah'
+          return Line
+
+     return wrapper
+
+@greet_edit
+def greet():
+    return 'Hello!'  
+
+print(greet()) 
