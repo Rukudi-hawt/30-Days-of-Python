@@ -1,3 +1,7 @@
+
+def sum_numbers(nums):  # normal function
+    return sum(nums) 
+
 def higher_order_function(f, lst):  # function as a parameter
     summation = f(lst)
     return summation
