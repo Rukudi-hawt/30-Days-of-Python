@@ -88,4 +88,5 @@ def concatenate_countries(country1, country2):
     return country1 + ', ' + country2
 
 concatenated_countries = functools.reduce(concatenate_countries, countries)
-print(concatenated_countries + ' are all countries in Europe.')
+print(concatenated_countries + ' are all north European countries.')
+
